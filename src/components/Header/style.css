@@ -1,0 +1,119 @@
+.header__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  border-radius: 20px 20px 0 0;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+h2,p {
+  margin: 0;
+}
+
+P,li{
+  color: var(--text-color);
+  transition: all 0.1s ease-in;
+  cursor: pointer;
+}
+
+P,li:hover{
+  color: var(--text-info);
+}
+
+
+img {
+  margin-right: 5px;
+}
+
+.headerRight {
+  display: flex;
+  list-style-type: none;
+  column-gap: 32px;
+}
+
+.headerRight li {
+  display: inline-flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+  .header__container {
+    background-color: black;
+  }
+}
+
+.by__bg {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 70%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.by__container {
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 20px ;
+  flex-direction: column;
+  box-shadow: -10px 4px 24px 0 rgba(0, 0, 0, 0.1);
+  z-index: 10000;
+  background: #fff;
+
+}
+
+.by__tax {
+  width: 100%;
+}
+
+.by__price,.by__tax-text {
+  display: flex;
+  justify-content: space-between;
+  padding: 19px 0;
+  position: relative;
+}
+
+.by__tax-text::before , .by__price::before {
+  content: '';
+  height: 2px;
+  display: block;
+  width: 60%;
+  top: 50%;
+  background-color: black;
+  color: black;
+  position: absolute;
+  right: 20%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  border-radius: 20px;
+  margin-bottom: 40px;
+  padding: 18px 0;
+  background: #9dd458;
+  width: 100%;
+  border-radius: 18px;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  right: 150px;
+}
